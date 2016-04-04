@@ -1,0 +1,27 @@
+/* Namuwiki Libre-like theme css
+ * Version 1.0
+ * by Lastorder-DC
+ */
+.senkawa .navbar-wrapper, .senkawa .navbar, .senkawa .nav-control {
+    background-color: #0074d9;
+}
+
+.senkawa .navbar-nav .nav-link:hover, .senkawa .wiki-article .wiki-article-menu a.discuss-bold {
+    background-color: #5bc0de;
+}
+
+.wiki-article .wiki-link-external {
+    color: #5A00FF;
+}
+
+.wiki-article .wiki-link-external:before {
+    background: #5A00FF;
+}
+
+.senkawa .wiki-article .res .r-head.first-author {
+    background: #5bc0de;
+}
+
+.wiki-article .wiki-quote {
+    border-left: 5px solid #0074d9;
+}
