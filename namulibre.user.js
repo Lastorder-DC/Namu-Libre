@@ -2,7 +2,7 @@
 // @name         NamuWiki Libre-like theme
 // @namespace    http://lastorder.toaru/
 // @downloadURL  https://raw.githubusercontent.com/Lastorder-DC/Namu-Libre/master/namulibre.user.js
-// @version      1.0
+// @version      1.0.0
 // @description  NamuWiki and LibreWiki became one!
 // @author       Lastorder-DC
 // @match        http://namu.wiki/*
@@ -40,4 +40,4 @@ $("div").each(function(index) {
     }
 });
 
-$('body').append('<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/Lastorder-DC/Namu-Libre/1.0/namulibre.user.css">');
+$('body').append('<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/Lastorder-DC/Namu-Libre/1.0.0/namulibre.user.css">');
