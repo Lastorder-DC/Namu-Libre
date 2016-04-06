@@ -1,18 +1,28 @@
 // ==UserScript==
 // @name         NamuWiki Libre-like theme
-// @namespace    http://lastorder.toaru/
 // @downloadURL  https://raw.githubusercontent.com/Lastorder-DC/Namu-Libre/master/namulibre.user.js
-// @version      1.0.0
-// @description  NamuWiki and LibreWiki became one!
+// @version      1.0.1
+// @description  NamuWiki Libre-like theme by DCinside Lastorder
 // @author       Lastorder-DC
 // @match        http://namu.wiki/*
 // @match        https://namu.wiki/*
 // @match        http://no-ssl.namu.wiki/*
 // @match        https://no-ssl.namu.wiki/*
-// @grant        none
+// @grant        GM_addStyle
+// @grant        GM_xmlhttpRequest
 // ==/UserScript==
 /* jshint -W097 */
 'use strict';
+
+function insertCSS(url) {
+  GM_xmlhttpRequest({
+    method: "GET",
+    url: url,
+    onload: function(res) {
+      GM_addStyle(res.responseText);
+    }
+  });
+}
 
 $("td").each(function(index) {
     var $style = $(this).attr("style");
@@ -40,4 +50,4 @@ $("div").each(function(index) {
     }
 });
 
-$('body').append('<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/Lastorder-DC/Namu-Libre/1.0.0/namulibre.user.css">');
+insertCSS("https://cdn.rawgit.com/Lastorder-DC/Namu-Libre/1.0.1/namulibre.user.css");
